@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho - ArteLê</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ArteLê</h1>
+        <p>Artesanato em Resina</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="carrinho.html" class="active">Carrinho</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart">
+        <h2>Seu Carrinho</h2>
+        <div class="cart-items">
+          <div class="empty-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Seu carrinho está vazio</p>
+            <a href="produtos.html" class="btn">Ver Produtos</a>
+          </div>
+        </div>
+
+        <div class="cart-summary">
+          <h3>Resumo do Pedido</h3>
+          <div class="summary-details">
+            <p>Subtotal: <span class="subtotal">R$ 0,00</span></p>
+            <p>Frete: <span class="shipping">A calcular</span></p>
+            <p class="total">Total: <span>R$ 0,00</span></p>
+          </div>
+          <button class="btn checkout-btn">Finalizar Compra</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ArteLê</h3>
+                <p>Artesanato em resina com amor e criatividade.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <form id="footer-contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/artele_artesanato/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CNhWniFJt/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5542991014774&text=Ol%C3%A1%2C%20tudo%20bem%3F%0AGostaria%20de%20fazer%20um%20pedido!%20%F0%9F%98%8A&fbclid=PAQ0xDSwLWbLpleHRuA2FlbQIxMAABp3dX9d2yU9AdL_4N-F70FtD3ewEA_7trJZfuUcf_IE0jtYntA5A4dkMII9ht_aem_ZIroPX4unZSV4GdLaEwR3w"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p><i class="fas fa-envelope"></i> arteleartesanatocomresina@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (42) 99101-4774</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ArteLê. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
